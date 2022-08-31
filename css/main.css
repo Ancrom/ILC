@@ -543,7 +543,7 @@ body {
   height: 145px;
   padding: 18px;
   border-radius: 50%;
-  background: url(./../../img/hero/circle.svg) center/cover no-repeat;
+  background: url(./../img/hero/circle.svg) center/cover no-repeat;
 }
 .hero-card__content {
   padding: 22px;
