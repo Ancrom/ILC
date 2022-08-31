@@ -1,0 +1,74 @@
+/* =============== PARTNER-CARD =============== */
+.partner-card {
+	display: grid;
+	grid-template-columns: minmax(240px, 330px) minmax(440px, 1fr);
+	padding: 48px 20px 48px 100px;
+	background: #fff;
+	align-items: center;
+	&:not(:last-child) {
+		margin: 0 0 16px 0;
+	}
+	&__image {
+		margin: 0 0 0 10px;
+	}
+	&__content {
+		max-width: 515px;
+		padding: 0 20px 0 0;
+		> *:not(:last-child) {
+			margin: 0 0 16px 0;
+		}
+	}
+	&__title {
+		line-height: 2.25;
+		font-weight: 500;
+	}
+	&__text {
+		font-size: rem(14);
+		span {
+			font-weight: 500;
+		}
+	}
+	&__list {
+		font-size: rem(14);
+		padding: 0 0 0 25px;
+	}
+	&__list-item {
+		list-style: disc;
+	}
+	@media (max-width: 1100px) {
+		padding: 40px 0 20px 40px;
+	}
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+		padding: 24px;
+		&:not(:last-child) {
+			margin: 0 0 8px 0;
+		}
+		&__image {
+			margin: 0 0 16px 0;
+			max-width: 190px;
+		}
+		&__img {
+			width: 100%;
+		}
+		&__content {
+			padding: 0;
+		}
+		&__title {
+			font-size: rem(14);
+		}
+		&__text {
+			font-size: rem(12);
+		}
+		&__list {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+		}
+		&__list-item {
+			width: fit-content;
+		}
+	}
+}

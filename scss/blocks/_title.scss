@@ -1,0 +1,17 @@
+/* =============== TITLE =============== */
+.title {
+	font-weight: 700;
+	font-size: rem(32);
+	line-height: 1.4;
+	@media (max-width: 767px) {
+		font-size: rem(24);
+	}
+	&--large {
+		font-size: rem(48);
+		line-height: 1.15;
+		@media (max-width: 767px) {
+			font-size: rem(24);
+			line-height: 1.25;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/* =============== ADVANTAGES-CARDS =============== */
+.advantages-cards {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+	&__item {
+		background: var(--background-gradient);
+		box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+		border-radius: 20px;
+		padding: 36px 32px 32px;
+		& > * + * {
+			margin: 16px 0 0 0;
+		}
+	}
+	&__icon {
+	}
+	&__title {
+		font-weight: 500;
+		line-height: 1.25;
+	}
+	&__text {
+		font-size: rem(14);
+	}
+	@media (max-width: 1320px) {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+	@media (max-width: 479px) {
+		gap: 8px;
+		&__title {
+			font-size: rem(14);
+		}
+		&__text {
+			font-size: rem(12);
+		}
+	}
+}

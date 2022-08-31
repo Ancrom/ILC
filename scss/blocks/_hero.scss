@@ -1,0 +1,103 @@
+/* =============== HERO =============== */
+.hero {
+	--container-max-width: 1320px;
+	position: relative;
+	padding: 0 0 144px 0;
+	&__wrapper {
+		display: flex;
+		flex-flow: column;
+	}
+	&__card {
+		align-self: flex-end;
+		margin: -21px 144px 0 0;
+	}
+	&__content {
+		max-width: 710px;
+	}
+	&__title {
+		&:not(:last-child) {
+			margin: 0 0 16px 0;
+		}
+	}
+	&__text {
+		&:not(:last-child) {
+			margin: 0 0 32px 0;
+		}
+	}
+	&__feature {
+		align-self: flex-end;
+	}
+	&__wrapper {
+		position: relative;
+		z-index: 1;
+	}
+	&__image-wrapper {
+		position: absolute;
+		right: 77px;
+		top: 55px;
+		width: 438px;
+		padding: 0 0 39% 0;
+		z-index: -1;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 5px;
+			left: 31%;
+			width: 197px;
+			height: 132px;
+			background: url(./../../img/hero/decor.svg);
+			z-index: 2;
+		}
+	}
+	@media (max-width: 1310px) {
+		&__image-wrapper {
+			width: 50%;
+			right: 50%;
+			transform: translate(50%, 0);
+			top: 0;
+			padding: 0 0 56% 0;
+			opacity: 0.4;
+			&::after {
+				display: none;
+			}
+		}
+	}
+	@media (max-width: 991px) {
+		&__content {
+			margin: 0 0 16px 0;
+		}
+		&__card {
+			margin: 0 0 16px 0;
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 26px 0 75px 0;
+		&__content {
+			text-align: center;
+		}
+		&__text {
+			font-size: 12px;
+			line-height: 1.5;
+			letter-spacing: -0.01em;
+		}
+		&__card {
+			align-self: center;
+			order: 2;
+		}
+		&__feature {
+			order: 3;
+		}
+		&__image-wrapper {
+			width: 100%;
+			padding: 0 0 111% 0;
+		}
+		&__button {
+			width: 195px;
+		}
+	}
+	@media (max-width: 479px) {
+		&__image-wrapper {
+			top: 85px;
+		}
+	}
+}

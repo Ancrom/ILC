@@ -1,0 +1,61 @@
+/* =============== HEADER =============== */
+.header {
+	padding: 45px 0 42px 0;
+	--container-max-width: 1310px;
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+	&__logo {
+		margin: 0 62px 0 0;
+	}
+	&__desc {
+		display: inline-block;
+		margin: 0 20px 0 0;
+		font-size: 12px;
+		line-height: 1.67;
+	}
+	&__buttons {
+		margin: 0 0 0 auto;
+		display: flex;
+		align-items: center;
+	}
+	&__link {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.12;
+		&:not(:last-child) {
+			margin: 0 36px 0 0;
+		}
+	}
+	&__button {
+		font-weight: 700;
+	}
+	@media (max-width: 991px) {
+		padding: 32px 0;
+		&__desc {
+			display: none;
+		}
+		&__button {
+			display: none;
+		}
+		&__link {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			background: url(./../img/icons/phone.svg) center / 12px no-repeat,
+				linear-gradient(326.06deg, #2641d1 11.53%, #3333a3 74.32%);
+			border-radius: 7px;
+			&:hover {
+				background: url(./../img/icons/phone.svg) center / 12px no-repeat,
+					linear-gradient(326.06deg, #3333a3 11.53%, #2641d1 74.32%);
+			}
+			span {
+				display: none;
+			}
+			&:not(:last-child) {
+				margin: 0 8px 0 0;
+			}
+		}
+	}
+}

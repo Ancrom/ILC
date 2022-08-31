@@ -1,0 +1,23 @@
+/* =============== BURGER =============== */
+.burger {
+	background: #DEE6EF;
+	padding: 17px 14px;
+	border-radius: 7px;
+	display: none;
+	transition: 0.2s ease-out;
+	&:hover {
+		background: #ccd3da;
+	}
+	&__line {
+		display: block;
+		width: 22px;
+		height: 2px;
+		background: #4614E8;
+		& + & {
+			margin: 5px 0 0 0;
+		}
+	}
+	@media (max-width: 991px) {
+		display: block;
+	}
+}

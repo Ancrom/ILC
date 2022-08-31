@@ -1,0 +1,21 @@
+/* =============== BUTTON =============== */
+.button {
+	display: inline-block;
+	font-weight: 400;
+	font-size: rem(16);
+	text-align: center;
+	color: #fff;
+	background: var(--accent-color-second);
+	border-radius: 15px;
+	padding: 16px 20px;
+	transition: 0.2s ease-out;
+	@media (max-width: 767px) {
+		font-size: rem(12);
+		font-weight: 500;
+		padding: 20px;
+		width: 220px;
+	}
+	&:hover {
+		background: var(--accent-color-hover);
+	}
+}

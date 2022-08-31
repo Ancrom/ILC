@@ -1,0 +1,31 @@
+/* =============== PHONE =============== */
+.phone {
+	max-width: 220px;
+	padding: 14px 16px;
+	background: url(../img/phone/smart-1.svg) top / contain no-repeat;
+	&__body {
+		padding: 80px 9px 115px;
+		border-radius: 15px;
+		background: #34449c;
+		display: flex;
+		flex-flow: column;
+
+		justify-content: center;
+	}
+	&__text {
+		color: #fff;
+		text-align: center;
+		letter-spacing: 0.17em;
+	}
+	@media (max-width: 321px) {
+		max-width: unset;
+		width: 160px;
+		padding:  14px 12px;
+		&__body {
+			padding: 60px 0 60px;
+		}
+		&__img {
+			max-width: 100%;
+		}
+	}
+}

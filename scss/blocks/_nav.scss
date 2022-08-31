@@ -1,0 +1,49 @@
+/* =============== NAV =============== */
+.nav {
+	&__list {
+		display: flex;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin: 0 48px 0 0;
+		}
+	}
+	&__link {
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		transition: 0.2s ease-out;
+		&:hover {
+			color: var(--text-color-hover);
+		}
+	}
+	&.active {
+		transform: translate(0, 0);
+	}
+	@media (max-width: 991px) {
+		position: fixed;
+		z-index: 9999;
+		top: 114px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow-y: auto;
+		background: var(--accent-color-main);
+		transform: translate(100%, 0);
+		transition: 0.3s ease-out;
+		&__list {
+			display: flex;
+			flex-flow: column;
+			text-align: center;
+		}
+		&__item {
+			width: 100%;
+			&:not(:last-child) {
+				margin: 0;
+			}
+		}
+		&__link {
+			display: block;
+			padding: 10px;
+		}
+	}
+}
