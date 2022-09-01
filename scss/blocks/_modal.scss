@@ -67,4 +67,26 @@
 		width: 14px;
 		height: 14px;
 	}
+	@media (max-width: 767px) {
+		&__box {
+			width: calc(100% - 40px);
+			padding: 62px 20px;
+		}
+	}
+	@media (max-width: 575px) {
+		&__title {
+			font-size: rem(16);
+		}
+	}
+	@media (max-width: 479px) {
+		 &__input {
+			width: 100%;
+			&:nth-child(1) {
+				background: url(./../img/modal/user.svg) 16px 50% / auto no-repeat, #fff;
+			}
+			&:nth-child(2) {
+				background: url(./../img/modal/email.svg) 15px 50% / auto no-repeat, #fff;
+			}
+		 }
+	}
 }

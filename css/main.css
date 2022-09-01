@@ -1906,4 +1906,26 @@ body {
   right: 24px;
   width: 14px;
   height: 14px;
+}
+@media (max-width: 767px) {
+  .modal__box {
+    width: calc(100% - 40px);
+    padding: 62px 20px;
+  }
+}
+@media (max-width: 575px) {
+  .modal__title {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 479px) {
+  .modal__input {
+    width: 100%;
+  }
+  .modal__input:nth-child(1) {
+    background: url(./../img/modal/user.svg) 16px 50%/auto no-repeat, #fff;
+  }
+  .modal__input:nth-child(2) {
+    background: url(./../img/modal/email.svg) 15px 50%/auto no-repeat, #fff;
+  }
 }/*# sourceMappingURL=main.css.map */
