@@ -1906,6 +1906,10 @@ body {
   right: 24px;
   width: 14px;
   height: 14px;
+  transition: 0.2s ease-out;
+}
+.modal__button-close:hover {
+  background: #459cff;
 }
 @media (max-width: 767px) {
   .modal__box {

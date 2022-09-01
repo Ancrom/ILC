@@ -21,3 +21,14 @@ buttonHero.addEventListener("click", (e) => {
     modal.classList.remove("active");
   });
 });
+
+// =============== TARIFF-BUTTON ===============
+const buttonTariff = document.querySelectorAll(".tariff__button");
+
+for (let i = 0; i < buttonTariff.length; i++) {
+  buttonTariff[i].addEventListener("click", () => {
+    for (let n = 0; n < buttonTariff.length; n++) {
+      buttonTariff[n].classList.toggle("active");
+    }
+  });
+}

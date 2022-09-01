@@ -66,6 +66,10 @@
 		right: 24px;
 		width: 14px;
 		height: 14px;
+		transition: 0.2s ease-out;
+		&:hover {
+			background: #459cff;
+		}
 	}
 	@media (max-width: 767px) {
 		&__box {
