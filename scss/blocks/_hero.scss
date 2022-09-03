@@ -36,7 +36,7 @@
 		right: 77px;
 		top: 55px;
 		width: 438px;
-		padding: 0 0 39% 0;
+		padding: 0 0 38.9% 0;
 		z-index: -1;
 		&::after {
 			content: "";
@@ -45,7 +45,7 @@
 			left: 31%;
 			width: 197px;
 			height: 132px;
-			background: url(./../../img/hero/decor.svg);
+			background: url(./../img/hero/decor.svg);
 			z-index: 2;
 		}
 	}

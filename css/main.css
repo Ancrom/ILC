@@ -185,6 +185,23 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: -330px;
+  left: -360px;
+  display: block;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(205, 187, 239, 0.2) 0%, rgba(196, 196, 196, 0) 100%);
+  width: 920px;
+  height: 920px;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .wrapper::before {
+    display: none;
+  }
 }
 
 .container {
@@ -422,7 +439,7 @@ body {
   right: 77px;
   top: 55px;
   width: 438px;
-  padding: 0 0 39% 0;
+  padding: 0 0 38.9% 0;
   z-index: -1;
 }
 .hero__image-wrapper::after {
@@ -432,7 +449,7 @@ body {
   left: 31%;
   width: 197px;
   height: 132px;
-  background: url(./../../img/hero/decor.svg);
+  background: url(./../img/hero/decor.svg);
   z-index: 2;
 }
 @media (max-width: 1310px) {

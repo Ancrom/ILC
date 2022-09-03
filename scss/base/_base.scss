@@ -29,6 +29,21 @@ body {
 	grid-template-rows: auto 1fr auto;
 	min-height: 100vh;
 	overflow-x: hidden;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: -330px;
+		left: -360px;
+		display: block;
+		background: radial-gradient(50% 50% at 50% 50%, rgba(205, 187, 239, 0.2) 0%, rgba(196, 196, 196, 0) 100%);
+		width: 920px;
+		height: 920px;
+		border-radius: 50%;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
 }
 
 // Container
